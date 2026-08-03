@@ -2,6 +2,7 @@
  {
   "doctype": "Workflow",
   "name": "Pond Project Stage",
+  "workflow_name": "Pond Project Stage",
   "document_type": "Pond Project",
   "workflow_state_field": "stage",
   "is_active": 1,
