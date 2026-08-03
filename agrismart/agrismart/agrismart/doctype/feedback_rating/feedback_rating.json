@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-31 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "criterion",
+  "rating",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "criterion",
+   "fieldtype": "Link",
+   "label": "Criterion",
+   "options": "Feedback Criterion",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 6
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Select",
+   "label": "Rating",
+   "options": "\n1\n2\n3\n4\n5",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks",
+   "in_list_view": 1,
+   "columns": 4
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-31 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "Feedback Rating",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "istable": 1,
+ "track_changes": 1
+}

@@ -1,0 +1,366 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-07-31 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_company",
+  "company",
+  "brand_name",
+  "slogan",
+  "logo",
+  "cb_company",
+  "address_line",
+  "address_line_2",
+  "phone",
+  "phone_2",
+  "email",
+  "fy_short",
+  "sec_product",
+  "default_item",
+  "product_description",
+  "cb_product",
+  "gsm",
+  "default_godown",
+  "sec_calc",
+  "anchor_width",
+  "cb_calc",
+  "extra_pct",
+  "cb_calc2",
+  "round_to",
+  "sec_rates",
+  "rate_farmer",
+  "cb_rates",
+  "rate_texel",
+  "cb_rates2",
+  "rate_risha",
+  "sec_comm",
+  "bill_rate",
+  "actual_rate",
+  "supply_rate",
+  "cb_comm",
+  "commission_rate",
+  "gst_pct",
+  "tds_pct",
+  "commission_item",
+  "sec_bank",
+  "principal_banks",
+  "sec_terms",
+  "terms",
+  "sec_msg",
+  "order_whatsapp",
+  "cb_msg",
+  "order_email",
+  "feedback_web_form_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_company",
+   "fieldtype": "Section Break",
+   "label": "Company"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brand_name",
+   "fieldtype": "Data",
+   "label": "Brand Name",
+   "default": "AgriSmart Farm Solutions LLP"
+  },
+  {
+   "fieldname": "slogan",
+   "fieldtype": "Data",
+   "label": "Slogan",
+   "default": "A Smart Way of Farming"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "cb_company",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Small Text",
+   "label": "Alternate Address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "phone_2",
+   "fieldtype": "Data",
+   "label": "Alternate Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "fy_short",
+   "fieldtype": "Data",
+   "label": "Fiscal Year Short Code",
+   "default": "26-27",
+   "description": "Used in document numbering, e.g. ASF/LD/26-27/0001"
+  },
+  {
+   "fieldname": "sec_product",
+   "fieldtype": "Section Break",
+   "label": "Default Product"
+  },
+  {
+   "fieldname": "default_item",
+   "fieldtype": "Link",
+   "label": "Default Liner Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Small Text",
+   "label": "Product Description",
+   "default": "Texel Reinforced HDPE Geomembrane CLF-50, 500 micron, Type II, IS 15351:2015"
+  },
+  {
+   "fieldname": "cb_product",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gsm",
+   "fieldtype": "Float",
+   "label": "GSM (for weight)",
+   "default": "420",
+   "precision": "2"
+  },
+  {
+   "fieldname": "default_godown",
+   "fieldtype": "Link",
+   "label": "Default Godown",
+   "options": "Godown"
+  },
+  {
+   "fieldname": "sec_calc",
+   "fieldtype": "Section Break",
+   "label": "Pond Calculation Defaults"
+  },
+  {
+   "fieldname": "anchor_width",
+   "fieldtype": "Float",
+   "label": "Anchor Trench Width (m)",
+   "default": "1.5",
+   "precision": "3"
+  },
+  {
+   "fieldname": "cb_calc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "extra_pct",
+   "fieldtype": "Float",
+   "label": "Extra Allowance (%)",
+   "default": "5",
+   "precision": "2"
+  },
+  {
+   "fieldname": "cb_calc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "round_to",
+   "fieldtype": "Float",
+   "label": "Round Area To (sq.m)",
+   "default": "10",
+   "precision": "2"
+  },
+  {
+   "fieldname": "sec_rates",
+   "fieldtype": "Section Break",
+   "label": "Farmer Quotation Rates (per sq.m)"
+  },
+  {
+   "fieldname": "rate_farmer",
+   "fieldtype": "Currency",
+   "label": "Rate to Farmer",
+   "default": "105"
+  },
+  {
+   "fieldname": "cb_rates",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_texel",
+   "fieldtype": "Currency",
+   "label": "Liner Supplier Rate",
+   "default": "89"
+  },
+  {
+   "fieldname": "cb_rates2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_risha",
+   "fieldtype": "Currency",
+   "label": "Installation Rate",
+   "default": "16"
+  },
+  {
+   "fieldname": "sec_comm",
+   "fieldtype": "Section Break",
+   "label": "Commission Working"
+  },
+  {
+   "fieldname": "bill_rate",
+   "fieldtype": "Currency",
+   "label": "Bill Rate",
+   "default": "107"
+  },
+  {
+   "fieldname": "actual_rate",
+   "fieldtype": "Currency",
+   "label": "Actual Rate",
+   "default": "105"
+  },
+  {
+   "fieldname": "supply_rate",
+   "fieldtype": "Currency",
+   "label": "Supply Rate",
+   "default": "89"
+  },
+  {
+   "fieldname": "cb_comm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_rate",
+   "fieldtype": "Currency",
+   "label": "Commission Rate (per sq.m)",
+   "default": "5.5"
+  },
+  {
+   "fieldname": "gst_pct",
+   "fieldtype": "Float",
+   "label": "GST %",
+   "default": "18",
+   "precision": "2"
+  },
+  {
+   "fieldname": "tds_pct",
+   "fieldtype": "Float",
+   "label": "TDS %",
+   "default": "2",
+   "precision": "2"
+  },
+  {
+   "fieldname": "commission_item",
+   "fieldtype": "Link",
+   "label": "Commission Item",
+   "options": "Item",
+   "description": "Service item used when a Commission Claim raises a Sales Invoice"
+  },
+  {
+   "fieldname": "sec_bank",
+   "fieldtype": "Section Break",
+   "label": "Principal Bank Accounts"
+  },
+  {
+   "fieldname": "principal_banks",
+   "fieldtype": "Table",
+   "label": "Principal Banks",
+   "options": "AgriSmart Principal Bank"
+  },
+  {
+   "fieldname": "sec_terms",
+   "fieldtype": "Section Break",
+   "label": "Quotation Terms and Conditions"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Table",
+   "label": "Terms",
+   "options": "AgriSmart Term"
+  },
+  {
+   "fieldname": "sec_msg",
+   "fieldtype": "Section Break",
+   "label": "Messaging"
+  },
+  {
+   "fieldname": "order_whatsapp",
+   "fieldtype": "Data",
+   "label": "Order WhatsApp Number"
+  },
+  {
+   "fieldname": "cb_msg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_email",
+   "fieldtype": "Data",
+   "label": "Order Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "feedback_web_form_url",
+   "fieldtype": "Data",
+   "label": "Feedback Web Form URL",
+   "read_only": 1,
+   "default": "/pond-feedback"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-31 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "AgriSmart Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriSmart Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "issingle": 1,
+ "track_changes": 1
+}

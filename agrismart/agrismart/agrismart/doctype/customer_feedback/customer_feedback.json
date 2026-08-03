@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-31 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pond_project",
+  "farmer_name",
+  "village",
+  "cb_fb",
+  "feedback_date",
+  "language",
+  "collected_by",
+  "source",
+  "sec_ratings",
+  "ratings",
+  "sec_yn",
+  "responses",
+  "sec_score",
+  "average_score",
+  "cb_score",
+  "band",
+  "sec_open",
+  "liked_most",
+  "improve",
+  "photo"
+ ],
+ "fields": [
+  {
+   "fieldname": "pond_project",
+   "fieldtype": "Link",
+   "label": "Pond Project",
+   "options": "Pond Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer",
+   "fetch_from": "pond_project.farmer_name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Pond Village",
+   "fetch_from": "pond_project.village",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_fb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedback_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Language",
+   "options": "English\nMarathi",
+   "default": "Marathi"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Link",
+   "label": "Collected By",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "In Person\nPhone\nWeb Form\nWhatsApp",
+   "default": "In Person"
+  },
+  {
+   "fieldname": "sec_ratings",
+   "fieldtype": "Section Break",
+   "label": "Service Ratings"
+  },
+  {
+   "fieldname": "ratings",
+   "fieldtype": "Table",
+   "label": "Ratings",
+   "options": "Feedback Rating"
+  },
+  {
+   "fieldname": "sec_yn",
+   "fieldtype": "Section Break",
+   "label": "Yes / No"
+  },
+  {
+   "fieldname": "responses",
+   "fieldtype": "Table",
+   "label": "Responses",
+   "options": "Feedback Response"
+  },
+  {
+   "fieldname": "sec_score",
+   "fieldtype": "Section Break",
+   "label": ""
+  },
+  {
+   "fieldname": "average_score",
+   "fieldtype": "Float",
+   "label": "Average Score",
+   "precision": "2",
+   "read_only": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "cb_score",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "band",
+   "fieldtype": "Data",
+   "label": "Band",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_open",
+   "fieldtype": "Section Break",
+   "label": "Open Comments"
+  },
+  {
+   "fieldname": "liked_most",
+   "fieldtype": "Text",
+   "label": "What The Farmer Liked"
+  },
+  {
+   "fieldname": "improve",
+   "fieldtype": "Text",
+   "label": "What Should Improve"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo With Farmer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-31 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "Customer Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriSmart Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriSmart Executive",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "format:FB-.YYYY.-.#####.",
+ "title_field": "farmer_name",
+ "track_changes": 1
+}

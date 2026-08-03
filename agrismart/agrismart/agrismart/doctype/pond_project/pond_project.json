@@ -1,0 +1,1000 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-31 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_farmer",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "farmer_name",
+  "farmer_name_mr",
+  "cb_farmer",
+  "mobile",
+  "alt_mobile",
+  "whatsapp",
+  "email",
+  "cb_farmer2",
+  "aadhaar",
+  "pan",
+  "lead",
+  "customer",
+  "sec_place",
+  "village",
+  "taluka",
+  "district",
+  "state",
+  "pin_code",
+  "cb_place",
+  "address",
+  "place_mr",
+  "gps_lat",
+  "gps_long",
+  "map_link",
+  "sec_pipeline",
+  "stage",
+  "lost_reason",
+  "source",
+  "cb_pipeline",
+  "sales_person",
+  "enquiry_date",
+  "remarks",
+  "sec_qual",
+  "qualification_items",
+  "qualification_score",
+  "sec_survey",
+  "survey_date",
+  "soil_type",
+  "water_source",
+  "cb_survey",
+  "anchor_width",
+  "extra_pct",
+  "round_to",
+  "depth_override",
+  "sec_walls",
+  "walls",
+  "pond_diagram",
+  "sec_calc",
+  "wall_area_total",
+  "base_area",
+  "perimeter",
+  "anchor_area",
+  "cb_calc",
+  "subtotal_area",
+  "area_with_extra",
+  "area_sqm",
+  "liner_weight_kg",
+  "cb_calc2",
+  "mean_length",
+  "mean_width",
+  "mean_depth",
+  "volume_cum",
+  "litres",
+  "sec_money",
+  "rate_farmer",
+  "rate_texel",
+  "rate_risha",
+  "cb_money",
+  "amount_total",
+  "amount_texel",
+  "amount_risha",
+  "amount_margin",
+  "sec_quote",
+  "quotation_no",
+  "quotation_date",
+  "quotation_valid_till",
+  "cb_quote",
+  "erpnext_quotation",
+  "quotation_notes",
+  "quotation_notes_mr",
+  "sec_order",
+  "order_date",
+  "sales_order_no",
+  "po_no",
+  "supplier_confirmation",
+  "cb_order",
+  "paid_texel",
+  "utr_texel",
+  "paid_risha",
+  "utr_risha",
+  "order_remark",
+  "order_remark_mr",
+  "sec_docs",
+  "documents",
+  "documents_pending",
+  "sec_dispatch",
+  "dispatch_trip",
+  "godown",
+  "dispatch_date",
+  "lr_no",
+  "cb_dispatch",
+  "vehicle",
+  "driver",
+  "delivered_on",
+  "challans",
+  "sec_install",
+  "installation_job",
+  "installation_team",
+  "cb_install",
+  "installation_start",
+  "installation_end",
+  "installation_steps",
+  "installation_progress",
+  "sec_photos",
+  "photos",
+  "sec_after",
+  "feedback",
+  "feedback_score",
+  "cb_after",
+  "open_complaints",
+  "sec_commission",
+  "commission_claim",
+  "commission_settled",
+  "cb_commission",
+  "commission_settled_on",
+  "commission_amount",
+  "sec_stamps",
+  "ts_qualified",
+  "ts_survey",
+  "ts_quotation",
+  "ts_order",
+  "cb_stamps",
+  "ts_dispatch",
+  "ts_delivered",
+  "ts_install",
+  "ts_completed",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_farmer",
+   "fieldtype": "Section Break",
+   "label": "Farmer"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name",
+   "read_only": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "farmer_name_mr",
+   "fieldtype": "Data",
+   "label": "Farmer Name (Marathi)"
+  },
+  {
+   "fieldname": "cb_farmer",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alt_mobile",
+   "fieldtype": "Data",
+   "label": "Alternate Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "whatsapp",
+   "fieldtype": "Data",
+   "label": "WhatsApp",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "cb_farmer2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aadhaar",
+   "fieldtype": "Data",
+   "label": "Aadhaar No."
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "CRM Lead",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sec_place",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Pond Village"
+  },
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Pond Taluka"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "Pond District"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "default": "Maharashtra"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "PIN Code"
+  },
+  {
+   "fieldname": "cb_place",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "place_mr",
+   "fieldtype": "Data",
+   "label": "Place (Marathi)"
+  },
+  {
+   "fieldname": "gps_lat",
+   "fieldtype": "Float",
+   "label": "Latitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "gps_long",
+   "fieldtype": "Float",
+   "label": "Longitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "map_link",
+   "fieldtype": "Data",
+   "label": "Map Link",
+   "read_only": 1,
+   "options": "URL"
+  },
+  {
+   "fieldname": "sec_pipeline",
+   "fieldtype": "Section Break",
+   "label": "Pipeline"
+  },
+  {
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "label": "Stage",
+   "options": "Lead\nQualified\nSurveyed\nQuoted\nOrder Booked\nDispatched\nDelivered\nInstalling\nCompleted\nCommission Claimed\nClosed\nLost",
+   "default": "Lead",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "lost_reason",
+   "fieldtype": "Small Text",
+   "label": "Lost Reason",
+   "depends_on": "eval:doc.stage=='Lost'"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Lead Source"
+  },
+  {
+   "fieldname": "cb_pipeline",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "label": "Sales Executive",
+   "options": "Sales Person",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "enquiry_date",
+   "fieldtype": "Date",
+   "label": "Enquiry Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "sec_qual",
+   "fieldtype": "Section Break",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "qualification_items",
+   "fieldtype": "Table",
+   "label": "Checklist",
+   "options": "Pond Qualification Item"
+  },
+  {
+   "fieldname": "qualification_score",
+   "fieldtype": "Percent",
+   "label": "Qualification Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_survey",
+   "fieldtype": "Section Break",
+   "label": "Site Survey"
+  },
+  {
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "label": "Survey Date"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Link",
+   "label": "Soil Type",
+   "options": "Soil Type"
+  },
+  {
+   "fieldname": "water_source",
+   "fieldtype": "Link",
+   "label": "Water Source",
+   "options": "Water Source"
+  },
+  {
+   "fieldname": "cb_survey",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "anchor_width",
+   "fieldtype": "Float",
+   "label": "Anchor Trench Width (m)",
+   "precision": "3"
+  },
+  {
+   "fieldname": "extra_pct",
+   "fieldtype": "Float",
+   "label": "Extra Allowance (%)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "round_to",
+   "fieldtype": "Float",
+   "label": "Round To (sq.m)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "depth_override",
+   "fieldtype": "Float",
+   "label": "Depth Override (m)",
+   "precision": "3",
+   "description": "Leave 0 to use the average of the four wall heights"
+  },
+  {
+   "fieldname": "sec_walls",
+   "fieldtype": "Section Break",
+   "label": "Wall Measurements"
+  },
+  {
+   "fieldname": "walls",
+   "fieldtype": "Table",
+   "label": "Walls",
+   "options": "Pond Wall"
+  },
+  {
+   "fieldname": "pond_diagram",
+   "fieldtype": "HTML",
+   "label": "Pond Diagram",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_calc",
+   "fieldtype": "Section Break",
+   "label": "Calculated Quantities"
+  },
+  {
+   "fieldname": "wall_area_total",
+   "fieldtype": "Float",
+   "label": "Total Wall Area (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_area",
+   "fieldtype": "Float",
+   "label": "Base Area (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "perimeter",
+   "fieldtype": "Float",
+   "label": "Top Perimeter (m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "anchor_area",
+   "fieldtype": "Float",
+   "label": "Anchor Area (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_calc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subtotal_area",
+   "fieldtype": "Float",
+   "label": "Subtotal (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "area_with_extra",
+   "fieldtype": "Float",
+   "label": "With Extra (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "area_sqm",
+   "fieldtype": "Float",
+   "label": "Liner Area (sq.m)",
+   "precision": "2",
+   "read_only": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "liner_weight_kg",
+   "fieldtype": "Float",
+   "label": "Liner Weight (kg)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_calc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mean_length",
+   "fieldtype": "Float",
+   "label": "Mean Length (m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mean_width",
+   "fieldtype": "Float",
+   "label": "Mean Width (m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mean_depth",
+   "fieldtype": "Float",
+   "label": "Depth Used (m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "volume_cum",
+   "fieldtype": "Float",
+   "label": "Water Volume (cu.m)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "litres",
+   "fieldtype": "Float",
+   "label": "Litres",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_money",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "rate_farmer",
+   "fieldtype": "Currency",
+   "label": "Rate to Farmer"
+  },
+  {
+   "fieldname": "rate_texel",
+   "fieldtype": "Currency",
+   "label": "Liner Supplier Rate"
+  },
+  {
+   "fieldname": "rate_risha",
+   "fieldtype": "Currency",
+   "label": "Installation Rate"
+  },
+  {
+   "fieldname": "cb_money",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_total",
+   "fieldtype": "Currency",
+   "label": "Farmer Total",
+   "read_only": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "amount_texel",
+   "fieldtype": "Currency",
+   "label": "Liner Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_risha",
+   "fieldtype": "Currency",
+   "label": "Installation Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_margin",
+   "fieldtype": "Currency",
+   "label": "Margin",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_quote",
+   "fieldtype": "Section Break",
+   "label": "Quotation"
+  },
+  {
+   "fieldname": "quotation_no",
+   "fieldtype": "Data",
+   "label": "Quotation No."
+  },
+  {
+   "fieldname": "quotation_date",
+   "fieldtype": "Date",
+   "label": "Quotation Date"
+  },
+  {
+   "fieldname": "quotation_valid_till",
+   "fieldtype": "Date",
+   "label": "Valid Till"
+  },
+  {
+   "fieldname": "cb_quote",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erpnext_quotation",
+   "fieldtype": "Link",
+   "label": "ERPNext Quotation",
+   "options": "Quotation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quotation_notes",
+   "fieldtype": "Small Text",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "quotation_notes_mr",
+   "fieldtype": "Small Text",
+   "label": "Additional Notes (Marathi)"
+  },
+  {
+   "fieldname": "sec_order",
+   "fieldtype": "Section Break",
+   "label": "Order Booking"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "sales_order_no",
+   "fieldtype": "Data",
+   "label": "SO No."
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "Farmer PO / Reference"
+  },
+  {
+   "fieldname": "supplier_confirmation",
+   "fieldtype": "Data",
+   "label": "Supplier Confirmation No."
+  },
+  {
+   "fieldname": "cb_order",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "paid_texel",
+   "fieldtype": "Currency",
+   "label": "Liner Amount Paid"
+  },
+  {
+   "fieldname": "utr_texel",
+   "fieldtype": "Data",
+   "label": "Liner Payment UTR"
+  },
+  {
+   "fieldname": "paid_risha",
+   "fieldtype": "Currency",
+   "label": "Installation Amount Paid"
+  },
+  {
+   "fieldname": "utr_risha",
+   "fieldtype": "Data",
+   "label": "Installation Payment UTR"
+  },
+  {
+   "fieldname": "order_remark",
+   "fieldtype": "Small Text",
+   "label": "Order Remark"
+  },
+  {
+   "fieldname": "order_remark_mr",
+   "fieldtype": "Small Text",
+   "label": "Order Remark (Marathi)"
+  },
+  {
+   "fieldname": "sec_docs",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Pond Document"
+  },
+  {
+   "fieldname": "documents_pending",
+   "fieldtype": "Int",
+   "label": "Documents Pending",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_dispatch",
+   "fieldtype": "Section Break",
+   "label": "Dispatch and Delivery"
+  },
+  {
+   "fieldname": "dispatch_trip",
+   "fieldtype": "Link",
+   "label": "Dispatch Trip",
+   "options": "Dispatch Trip",
+   "read_only": 1
+  },
+  {
+   "fieldname": "godown",
+   "fieldtype": "Link",
+   "label": "Godown",
+   "options": "Godown"
+  },
+  {
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "label": "Dispatch Date"
+  },
+  {
+   "fieldname": "lr_no",
+   "fieldtype": "Data",
+   "label": "LR / Challan No."
+  },
+  {
+   "fieldname": "cb_dispatch",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "delivered_on",
+   "fieldtype": "Date",
+   "label": "Delivered On"
+  },
+  {
+   "fieldname": "challans",
+   "fieldtype": "Table",
+   "label": "Challans",
+   "options": "Pond Challan"
+  },
+  {
+   "fieldname": "sec_install",
+   "fieldtype": "Section Break",
+   "label": "Installation"
+  },
+  {
+   "fieldname": "installation_job",
+   "fieldtype": "Link",
+   "label": "Installation Job",
+   "options": "Installation Job",
+   "read_only": 1
+  },
+  {
+   "fieldname": "installation_team",
+   "fieldtype": "Link",
+   "label": "Installation Team",
+   "options": "Installation Team"
+  },
+  {
+   "fieldname": "cb_install",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "installation_start",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "installation_end",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "installation_steps",
+   "fieldtype": "Table",
+   "label": "Steps",
+   "options": "Pond Installation Step"
+  },
+  {
+   "fieldname": "installation_progress",
+   "fieldtype": "Percent",
+   "label": "Progress",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_photos",
+   "fieldtype": "Section Break",
+   "label": "Photographs"
+  },
+  {
+   "fieldname": "photos",
+   "fieldtype": "Table",
+   "label": "Photos",
+   "options": "Pond Photo"
+  },
+  {
+   "fieldname": "sec_after",
+   "fieldtype": "Section Break",
+   "label": "After Sales"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Link",
+   "label": "Customer Feedback",
+   "options": "Customer Feedback",
+   "read_only": 1
+  },
+  {
+   "fieldname": "feedback_score",
+   "fieldtype": "Float",
+   "label": "Feedback Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_after",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "open_complaints",
+   "fieldtype": "Int",
+   "label": "Open Complaints",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_commission",
+   "fieldtype": "Section Break",
+   "label": "Commission"
+  },
+  {
+   "fieldname": "commission_claim",
+   "fieldtype": "Link",
+   "label": "Commission Claim",
+   "options": "Commission Claim",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_settled",
+   "fieldtype": "Check",
+   "label": "Settled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_commission",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_settled_on",
+   "fieldtype": "Date",
+   "label": "Settled On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_amount",
+   "fieldtype": "Currency",
+   "label": "Commission Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_stamps",
+   "fieldtype": "Section Break",
+   "label": "Stage Timestamps"
+  },
+  {
+   "fieldname": "ts_qualified",
+   "fieldtype": "Date",
+   "label": "Qualified On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ts_survey",
+   "fieldtype": "Date",
+   "label": "Surveyed On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ts_quotation",
+   "fieldtype": "Date",
+   "label": "Quoted On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ts_order",
+   "fieldtype": "Date",
+   "label": "Ordered On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_stamps",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ts_dispatch",
+   "fieldtype": "Date",
+   "label": "Dispatched On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ts_delivered",
+   "fieldtype": "Date",
+   "label": "Delivered On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ts_install",
+   "fieldtype": "Date",
+   "label": "Installation Started",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ts_completed",
+   "fieldtype": "Date",
+   "label": "Completed On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Pond Project",
+   "read_only": 1,
+   "no_copy": 1,
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-31 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "Pond Project",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriSmart Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriSmart Executive",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "farmer_name",
+ "search_fields": "mobile,village,taluka,stage",
+ "track_changes": 1
+}

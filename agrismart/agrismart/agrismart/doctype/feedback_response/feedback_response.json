@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-31 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "criterion",
+  "answer",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "criterion",
+   "fieldtype": "Link",
+   "label": "Question",
+   "options": "Feedback Criterion",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 7
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Select",
+   "label": "Answer",
+   "options": "\nYes\nNo",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks",
+   "in_list_view": 1,
+   "columns": 3
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-31 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "Feedback Response",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "istable": 1,
+ "track_changes": 1
+}

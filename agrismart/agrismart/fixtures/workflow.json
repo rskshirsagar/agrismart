@@ -1,0 +1,158 @@
+[
+ {
+  "doctype": "Workflow",
+  "name": "Pond Project Stage",
+  "document_type": "Pond Project",
+  "workflow_state_field": "stage",
+  "is_active": 1,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "state": "Lead",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Executive"
+   },
+   {
+    "state": "Qualified",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Executive"
+   },
+   {
+    "state": "Surveyed",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Executive"
+   },
+   {
+    "state": "Quoted",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Executive"
+   },
+   {
+    "state": "Order Booked",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Manager"
+   },
+   {
+    "state": "Dispatched",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Logistics"
+   },
+   {
+    "state": "Delivered",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Logistics"
+   },
+   {
+    "state": "Installing",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Installation"
+   },
+   {
+    "state": "Completed",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Installation"
+   },
+   {
+    "state": "Commission Claimed",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Manager"
+   },
+   {
+    "state": "Closed",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Manager"
+   },
+   {
+    "state": "Lost",
+    "doc_status": "0",
+    "allow_edit": "AgriSmart Manager"
+   }
+  ],
+  "transitions": [
+   {
+    "state": "Lead",
+    "action": "Qualify",
+    "next_state": "Qualified",
+    "allowed": "AgriSmart Executive"
+   },
+   {
+    "state": "Qualified",
+    "action": "Record Survey",
+    "next_state": "Surveyed",
+    "allowed": "AgriSmart Executive"
+   },
+   {
+    "state": "Surveyed",
+    "action": "Send Quotation",
+    "next_state": "Quoted",
+    "allowed": "AgriSmart Executive"
+   },
+   {
+    "state": "Quoted",
+    "action": "Book Order",
+    "next_state": "Order Booked",
+    "allowed": "AgriSmart Manager"
+   },
+   {
+    "state": "Order Booked",
+    "action": "Dispatch",
+    "next_state": "Dispatched",
+    "allowed": "AgriSmart Logistics"
+   },
+   {
+    "state": "Dispatched",
+    "action": "Confirm Delivery",
+    "next_state": "Delivered",
+    "allowed": "AgriSmart Logistics"
+   },
+   {
+    "state": "Delivered",
+    "action": "Start Installation",
+    "next_state": "Installing",
+    "allowed": "AgriSmart Installation"
+   },
+   {
+    "state": "Installing",
+    "action": "Complete",
+    "next_state": "Completed",
+    "allowed": "AgriSmart Installation"
+   },
+   {
+    "state": "Completed",
+    "action": "Claim Commission",
+    "next_state": "Commission Claimed",
+    "allowed": "AgriSmart Manager"
+   },
+   {
+    "state": "Commission Claimed",
+    "action": "Close",
+    "next_state": "Closed",
+    "allowed": "AgriSmart Manager"
+   },
+   {
+    "state": "Lead",
+    "action": "Mark Lost",
+    "next_state": "Lost",
+    "allowed": "AgriSmart Executive"
+   },
+   {
+    "state": "Qualified",
+    "action": "Mark Lost",
+    "next_state": "Lost",
+    "allowed": "AgriSmart Executive"
+   },
+   {
+    "state": "Surveyed",
+    "action": "Mark Lost",
+    "next_state": "Lost",
+    "allowed": "AgriSmart Executive"
+   },
+   {
+    "state": "Quoted",
+    "action": "Mark Lost",
+    "next_state": "Lost",
+    "allowed": "AgriSmart Executive"
+   }
+  ]
+ }
+]

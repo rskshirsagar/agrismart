@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-31 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "village_name",
+  "village_name_mr",
+  "taluka",
+  "district",
+  "pin_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "village_name",
+   "fieldtype": "Data",
+   "label": "Village Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "village_name_mr",
+   "fieldtype": "Data",
+   "label": "Village Name (Marathi)"
+  },
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Pond Taluka",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "Pond District",
+   "fetch_from": "taluka.district",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "PIN Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-31 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "Pond Village",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriSmart Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "format:{village_name} ({taluka})",
+ "title_field": "village_name",
+ "search_fields": "taluka,district",
+ "track_changes": 1
+}
