@@ -1,0 +1,23 @@
+{
+ "add_total_row": 1,
+ "creation": "2026-07-31 10:00:00.000000",
+ "disabled": 0,
+ "doctype": "Report",
+ "is_standard": "Yes",
+ "modified": "2026-07-31 10:00:00.000000",
+ "module": "AgriSmart",
+ "name": "Pond Project Register",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Pond Project",
+ "report_name": "Pond Project Register",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "AgriSmart Manager"
+  },
+  {
+   "role": "AgriSmart Executive"
+  }
+ ]
+}

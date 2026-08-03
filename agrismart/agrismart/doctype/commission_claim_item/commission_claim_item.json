@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-31 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pond_project",
+  "farmer_name",
+  "taluka",
+  "completed_on",
+  "qty_sqm",
+  "cbi_1",
+  "bill_rate",
+  "actual_rate",
+  "supply_rate",
+  "discount_rate",
+  "discount_amount",
+  "billing_amount",
+  "cbi_2",
+  "commission_rate",
+  "commission",
+  "gst_amount",
+  "gross",
+  "tds",
+  "freight",
+  "expenses",
+  "net_receivable",
+  "voucher_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "pond_project",
+   "fieldtype": "Link",
+   "label": "Pond Project",
+   "options": "Pond Project",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer",
+   "fetch_from": "pond_project.farmer_name",
+   "read_only": 1,
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Pond Taluka",
+   "fetch_from": "pond_project.taluka",
+   "read_only": 1
+  },
+  {
+   "fieldname": "completed_on",
+   "fieldtype": "Date",
+   "label": "Completed On",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "qty_sqm",
+   "fieldtype": "Float",
+   "label": "Qty (sq.m)",
+   "precision": "2",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "cbi_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bill_rate",
+   "fieldtype": "Currency",
+   "label": "Bill Rate"
+  },
+  {
+   "fieldname": "actual_rate",
+   "fieldtype": "Currency",
+   "label": "Actual Rate"
+  },
+  {
+   "fieldname": "supply_rate",
+   "fieldtype": "Currency",
+   "label": "Supply Rate"
+  },
+  {
+   "fieldname": "discount_rate",
+   "fieldtype": "Currency",
+   "label": "Discount Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "billing_amount",
+   "fieldtype": "Currency",
+   "label": "Billing Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cbi_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_rate",
+   "fieldtype": "Currency",
+   "label": "Commission Rate"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Currency",
+   "label": "Commission",
+   "read_only": 1,
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "gst_amount",
+   "fieldtype": "Currency",
+   "label": "GST",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gross",
+   "fieldtype": "Currency",
+   "label": "Gross",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tds",
+   "fieldtype": "Currency",
+   "label": "TDS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "freight",
+   "fieldtype": "Currency",
+   "label": "Freight"
+  },
+  {
+   "fieldname": "expenses",
+   "fieldtype": "Currency",
+   "label": "Other Expenses"
+  },
+  {
+   "fieldname": "net_receivable",
+   "fieldtype": "Currency",
+   "label": "Net",
+   "read_only": 1,
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Data",
+   "label": "Voucher / LR No."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-31 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "Commission Claim Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "istable": 1,
+ "track_changes": 1
+}
