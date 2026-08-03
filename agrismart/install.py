@@ -49,6 +49,7 @@ WATER = ["Borewell", "Open well", "Canal", "River lift",
 
 
 def after_install():
+	ensure_workflow_masters()
 	create_roles()
 	seed("Qualification Item", "qualification_item", QUALIFICATION_ITEMS)
 	seed("Installation Step", "installation_step", INSTALLATION_STEPS)
@@ -75,3 +76,47 @@ def seed(doctype, fieldname, values):
 			if doc.meta.has_field("sequence"):
 				doc.sequence = i + 1
 			doc.insert(ignore_permissions=True)
+
+
+WORKFLOW_STATES = [
+	("Lead", "Info"),
+	("Qualified", "Info"),
+	("Surveyed", "Warning"),
+	("Quoted", "Warning"),
+	("Order Booked", "Primary"),
+	("Dispatched", "Primary"),
+	("Delivered", "Primary"),
+	("Installing", "Warning"),
+	("Completed", "Success"),
+	("Commission Claimed", "Success"),
+	("Closed", "Success"),
+	("Lost", "Danger"),
+]
+
+WORKFLOW_ACTIONS = [
+	"Qualify", "Record Survey", "Send Quotation", "Book Order", "Dispatch",
+	"Confirm Delivery", "Start Installation", "Complete", "Claim Commission",
+	"Close", "Mark Lost",
+]
+
+
+def ensure_workflow_masters():
+	"""Link targets for fixtures/workflow.json. sync_fixtures does not
+	guarantee file order, so create these explicitly rather than relying
+	on a second fixture file."""
+	for state, style in WORKFLOW_STATES:
+		if not frappe.db.exists("Workflow State", state):
+			frappe.get_doc({
+				"doctype": "Workflow State",
+				"workflow_state_name": state,
+				"style": style,
+			}).insert(ignore_permissions=True)
+
+	for action in WORKFLOW_ACTIONS:
+		if not frappe.db.exists("Workflow Action Master", action):
+			frappe.get_doc({
+				"doctype": "Workflow Action Master",
+				"workflow_action_name": action,
+			}).insert(ignore_permissions=True)
+
+	frappe.db.commit()
