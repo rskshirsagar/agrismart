@@ -4,6 +4,8 @@ app_publisher = "AgriSmart Farm Solutions LLP"
 app_description = "Farm pond liner sales, installation and commission management"
 app_email = "info@example.com"
 app_license = "mit"
+app_logo_url = "/assets/agrismart/images/logo.svg"
+app_home = "/desk/agrismart"
 required_apps = ["erpnext"]
 
 # ---------------------------------------------------------------- assets
@@ -18,7 +20,7 @@ add_to_apps_screen = [
 		"name": "agrismart",
 		"logo": "/assets/agrismart/images/logo.svg",
 		"title": "AgriSmart",
-		"route": "/app/agrismart",
+		"route": "/desk/agrismart",
 		"has_permission": "agrismart.utils.permissions.has_app_permission",
 	}
 ]
