@@ -1,0 +1,389 @@
+{
+ "charts": [
+  {
+   "chart_name": "Pond Projects by Stage",
+   "label": "Pond Projects by Stage"
+  }
+ ],
+ "content": "[{\"id\": \"hdr_kpi\", \"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>Overview</span>\", \"col\": 12}}, {\"id\": \"nc_open_leads\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Open Leads\", \"col\": 3}}, {\"id\": \"nc_orders_booked\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Orders Booked\", \"col\": 3}}, {\"id\": \"nc_awaiting_installation\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Awaiting Installation\", \"col\": 3}}, {\"id\": \"nc_completed_this_month\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Completed This Month\", \"col\": 3}}, {\"id\": \"sp1\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"chart1\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Pond Projects by Stage\", \"col\": 12}}, {\"id\": \"sp2\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"hdr_sc\", \"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>Your Shortcuts</span>\", \"col\": 12}}, {\"id\": \"sc_pond_project\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Pond Projects\", \"col\": 3}}, {\"id\": \"sc_pond_complaint\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Open Complaints\", \"col\": 3}}, {\"id\": \"sc_dispatch_trip\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Dispatch Trips\", \"col\": 3}}, {\"id\": \"sc_agrismart_settings\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Settings\", \"col\": 3}}, {\"id\": \"sp3\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"hdr_rl\", \"type\": \"header\", \"data\": {\"text\": \"<span class='h4'>Reports &amp; Masters</span>\", \"col\": 12}}, {\"id\": \"cd_sales_pipeline\", \"type\": \"card\", \"data\": {\"card_name\": \"Sales Pipeline\", \"col\": 4}}, {\"id\": \"cd_delivery\", \"type\": \"card\", \"data\": {\"card_name\": \"Delivery\", \"col\": 4}}, {\"id\": \"cd_money\", \"type\": \"card\", \"data\": {\"card_name\": \"Money\", \"col\": 4}}, {\"id\": \"cd_service\", \"type\": \"card\", \"data\": {\"card_name\": \"Service\", \"col\": 4}}, {\"id\": \"cd_reports\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}, {\"id\": \"cd_geography\", \"type\": \"card\", \"data\": {\"card_name\": \"Geography\", \"col\": 4}}, {\"id\": \"cd_masters\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 4}}, {\"id\": \"cd_setup\", \"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}]",
+ "creation": "2026-07-31 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "organization",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "AgriSmart",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Pipeline",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pond Project",
+   "link_count": 0,
+   "link_to": "Pond Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lead",
+   "link_count": 0,
+   "link_to": "Lead",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delivery",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dispatch Trip",
+   "link_count": 0,
+   "link_to": "Dispatch Trip",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Installation Job",
+   "link_count": 0,
+   "link_to": "Installation Job",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Godown",
+   "link_count": 0,
+   "link_to": "Godown",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Installation Team",
+   "link_count": 0,
+   "link_to": "Installation Team",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Money",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Commission Claim",
+   "link_count": 0,
+   "link_to": "Commission Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Service",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pond Complaint",
+   "link_count": 0,
+   "link_to": "Pond Complaint",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Feedback",
+   "link_count": 0,
+   "link_to": "Customer Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "Pond Project",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Pond Project Register",
+   "link_count": 0,
+   "link_to": "Pond Project Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Geography",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pond District",
+   "link_count": 0,
+   "link_to": "Pond District",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pond Taluka",
+   "link_count": 0,
+   "link_to": "Pond Taluka",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pond Village",
+   "link_count": 0,
+   "link_to": "Pond Village",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Soil Type",
+   "link_count": 0,
+   "link_to": "Soil Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Water Source",
+   "link_count": 0,
+   "link_to": "Water Source",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Complaint Nature",
+   "link_count": 0,
+   "link_to": "Complaint Nature",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Qualification Item",
+   "link_count": 0,
+   "link_to": "Qualification Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Installation Step",
+   "link_count": 0,
+   "link_to": "Installation Step",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Feedback Criterion",
+   "link_count": 0,
+   "link_to": "Feedback Criterion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "AgriSmart Settings",
+   "link_count": 0,
+   "link_to": "AgriSmart Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-31 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "AgriSmart",
+ "number_cards": [
+  {
+   "label": "Open Leads",
+   "number_card_name": "Open Leads"
+  },
+  {
+   "label": "Orders Booked",
+   "number_card_name": "Orders Booked"
+  },
+  {
+   "label": "Awaiting Installation",
+   "number_card_name": "Awaiting Installation"
+  },
+  {
+   "label": "Completed This Month",
+   "number_card_name": "Completed This Month"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Pond Projects",
+   "link_to": "Pond Project",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Open Complaints",
+   "link_to": "Pond Complaint",
+   "stats_filter": "{\"status\": [\"in\", [\"Open\", \"In Progress\"]]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Dispatch Trips",
+   "link_to": "Dispatch Trip",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Settings",
+   "link_to": "AgriSmart Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "AgriSmart"
+}

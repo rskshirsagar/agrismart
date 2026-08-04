@@ -9,11 +9,33 @@ required_apps = ["erpnext"]
 # ---------------------------------------------------------------- assets
 app_include_js = "/assets/agrismart/js/pond_calc.js"
 
+# ---------------------------------------------------------------- apps screen
+# frappe/apps.py::get_apps() skips any installed app that does not declare this
+# hook ("if not len(app_details): continue"). Doctypes, Module Def and even a
+# workspace make no difference — without this there is no tile on /apps.
+add_to_apps_screen = [
+	{
+		"name": "agrismart",
+		"logo": "/assets/agrismart/images/logo.svg",
+		"title": "AgriSmart",
+		"route": "/app/agrismart",
+		"has_permission": "agrismart.utils.permissions.has_app_permission",
+	}
+]
+
 # ---------------------------------------------------------------- fixtures
 fixtures = [
 	{"dt": "Workflow", "filters": [["name", "in", ["Pond Project Stage"]]]},
-	{"dt": "Workflow State", "filters": [["name", "like", "%"]]},
-	{"dt": "Workflow Action Master", "filters": [["name", "like", "%"]]},
+	{"dt": "Workflow State", "filters": [["name", "in", [
+		"Lead", "Qualified", "Surveyed", "Quoted", "Order Booked", "Dispatched",
+		"Delivered", "Installing", "Completed", "Commission Claimed", "Closed",
+		"Lost",
+	]]]},
+	{"dt": "Workflow Action Master", "filters": [["name", "in", [
+		"Qualify", "Record Survey", "Send Quotation", "Book Order", "Dispatch",
+		"Confirm Delivery", "Start Installation", "Complete", "Claim Commission",
+		"Close", "Mark Lost",
+	]]]},
 	{"dt": "Role", "filters": [["name", "in", [
 		"AgriSmart Manager", "AgriSmart Executive",
 		"AgriSmart Logistics", "AgriSmart Installation",
