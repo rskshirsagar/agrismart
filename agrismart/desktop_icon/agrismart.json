@@ -1,0 +1,17 @@
+{
+ "app": "agrismart",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_type": "App",
+ "idx": 20,
+ "label": "AgriSmart",
+ "link": "/desk/agrismart",
+ "link_type": "External",
+ "logo_url": "/assets/agrismart/images/logo.svg",
+ "modified": "2026-08-04 10:00:00.000000",
+ "name": "AgriSmart",
+ "owner": "Administrator",
+ "roles": [],
+ "standard": 1
+}
