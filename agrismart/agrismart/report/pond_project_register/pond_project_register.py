@@ -15,7 +15,9 @@ COLUMNS = [
 	("commission_amount", _("Commission"), "Currency", None, 110),
 	("delivered_on", _("Delivered"), "Date", None, 100),
 	("installation_end", _("Completed"), "Date", None, 100),
-	("volume_cum", _("Water (cu.m)"), "Float", None, 110),
+	("capacity_cum", _("Water (cu.m)"), "Float", None, 110),
+	("capacity_lakh_litres", _("Lakh Litres"), "Float", None, 100),
+	("qualification_status", _("Qualification"), "Data", None, 110),
 ]
 
 

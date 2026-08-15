@@ -6,6 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "tab_lead",
   "sec_farmer",
   "first_name",
   "middle_name",
@@ -14,8 +15,9 @@
   "farmer_name_mr",
   "cb_farmer",
   "mobile",
-  "alt_mobile",
+  "whatsapp_same_as_mobile",
   "whatsapp",
+  "alt_mobile",
   "email",
   "cb_farmer2",
   "aadhaar",
@@ -29,8 +31,10 @@
   "state",
   "pin_code",
   "cb_place",
+  "address_auto",
   "address",
   "place_mr",
+  "cb_place2",
   "gps_lat",
   "gps_long",
   "map_link",
@@ -42,100 +46,6 @@
   "sales_person",
   "enquiry_date",
   "remarks",
-  "sec_qual",
-  "qualification_items",
-  "qualification_score",
-  "sec_survey",
-  "survey_date",
-  "soil_type",
-  "water_source",
-  "cb_survey",
-  "anchor_width",
-  "extra_pct",
-  "round_to",
-  "depth_override",
-  "sec_walls",
-  "walls",
-  "pond_diagram",
-  "sec_calc",
-  "wall_area_total",
-  "base_area",
-  "perimeter",
-  "anchor_area",
-  "cb_calc",
-  "subtotal_area",
-  "area_with_extra",
-  "area_sqm",
-  "liner_weight_kg",
-  "cb_calc2",
-  "mean_length",
-  "mean_width",
-  "mean_depth",
-  "volume_cum",
-  "litres",
-  "sec_money",
-  "rate_farmer",
-  "rate_texel",
-  "rate_risha",
-  "cb_money",
-  "amount_total",
-  "amount_texel",
-  "amount_risha",
-  "amount_margin",
-  "sec_quote",
-  "quotation_no",
-  "quotation_date",
-  "quotation_valid_till",
-  "cb_quote",
-  "erpnext_quotation",
-  "quotation_notes",
-  "quotation_notes_mr",
-  "sec_order",
-  "order_date",
-  "sales_order_no",
-  "po_no",
-  "supplier_confirmation",
-  "cb_order",
-  "paid_texel",
-  "utr_texel",
-  "paid_risha",
-  "utr_risha",
-  "order_remark",
-  "order_remark_mr",
-  "sec_docs",
-  "documents",
-  "documents_pending",
-  "sec_dispatch",
-  "dispatch_trip",
-  "godown",
-  "dispatch_date",
-  "lr_no",
-  "cb_dispatch",
-  "vehicle",
-  "driver",
-  "delivered_on",
-  "challans",
-  "sec_install",
-  "installation_job",
-  "installation_team",
-  "cb_install",
-  "installation_start",
-  "installation_end",
-  "installation_steps",
-  "installation_progress",
-  "sec_photos",
-  "photos",
-  "sec_after",
-  "feedback",
-  "feedback_score",
-  "cb_after",
-  "open_complaints",
-  "sec_commission",
-  "commission_claim",
-  "commission_settled",
-  "cb_commission",
-  "commission_settled_on",
-  "commission_amount",
   "sec_stamps",
   "ts_qualified",
   "ts_survey",
@@ -146,9 +56,187 @@
   "ts_delivered",
   "ts_install",
   "ts_completed",
+  "tab_qualification",
+  "sec_qual_check",
+  "qualification_items",
+  "load_checklist",
+  "sec_qual_detail",
+  "expected_pond_size",
+  "target_month",
+  "target_year",
+  "cb_qual",
+  "qualification_notes",
+  "sec_qual_out",
+  "qualification_score",
+  "qualification_status",
+  "cb_qual_out",
+  "qualified_on",
+  "not_qualified_reason",
+  "tab_survey",
+  "sec_survey",
+  "survey_date",
+  "surveyed_by",
+  "soil_type",
+  "water_source",
+  "cb_survey",
+  "survey_gps",
+  "existing_excavation",
+  "access_for_truck",
+  "power_available",
+  "sec_survey_notes",
+  "survey_notes",
+  "sec_survey_photos",
+  "photos",
+  "tab_calculator",
+  "sec_walls",
+  "walls",
+  "sec_params",
+  "anchor_width",
+  "cb_params",
+  "waste_pct",
+  "cb_params2",
+  "water_depth",
+  "cb_params3",
+  "round_to",
+  "sec_diagram",
+  "pond_diagram",
+  "sec_liner",
+  "wall_area_total",
+  "base_area",
+  "perimeter",
+  "anchor_area",
+  "cb_liner",
+  "sub_total_area",
+  "waste_area",
+  "area_sqm",
+  "liner_weight_kg",
+  "sec_water",
+  "mean_length",
+  "mean_breadth",
+  "height_used",
+  "cb_water",
+  "capacity_cum",
+  "capacity_litres",
+  "capacity_lakh_litres",
+  "sec_money",
+  "rate_texel",
+  "rate_risha",
+  "rate_farmer",
+  "cb_money",
+  "amount_texel",
+  "amount_risha",
+  "amount_total",
+  "amount_margin",
+  "amount_in_words",
+  "sec_report",
+  "calculation_report",
+  "tab_quotation",
+  "sec_quote",
+  "quotation_no",
+  "quotation_date",
+  "quotation_valid_till",
+  "cb_quote",
+  "erpnext_quotation",
+  "quotation_status",
+  "sec_quote_notes",
+  "quotation_notes",
+  "quotation_notes_mr",
+  "tab_sales_order",
+  "sec_order",
+  "order_date",
+  "sales_order_no",
+  "po_no",
+  "cb_order",
+  "order_value",
+  "advance_received",
+  "balance_due",
+  "sec_order_remark",
+  "order_remark",
+  "order_remark_mr",
+  "sec_docs",
+  "documents",
+  "documents_pending",
+  "tab_purchase_order",
+  "sec_po_liner",
+  "liner_supplier",
+  "po_texel_no",
+  "po_texel_date",
+  "supplier_confirmation",
+  "cb_po_liner",
+  "po_texel_amount",
+  "paid_texel",
+  "utr_texel",
+  "paid_texel_on",
+  "sec_po_inst",
+  "installation_supplier",
+  "po_risha_no",
+  "po_risha_date",
+  "cb_po_inst",
+  "po_risha_amount",
+  "paid_risha",
+  "utr_risha",
+  "paid_risha_on",
+  "tab_delivery",
+  "sec_dispatch",
+  "dispatch_trip",
+  "godown",
+  "dispatch_date",
+  "lr_no",
+  "cb_dispatch",
+  "vehicle",
+  "driver",
+  "planned_delivery_date",
+  "delivered_on",
+  "sec_challans",
+  "challans",
+  "tab_installation",
+  "sec_install",
+  "installation_job",
+  "installation_team",
+  "cb_install",
+  "installation_start",
+  "installation_end",
+  "installation_progress",
+  "sec_install_steps",
+  "installation_steps",
+  "tab_feedback",
+  "sec_after",
+  "feedback",
+  "cb_after",
+  "feedback_score",
+  "feedback_band",
+  "tab_complaints",
+  "sec_complaints",
+  "open_complaints",
+  "total_complaints",
+  "sec_complaint_list",
+  "complaint_list",
+  "tab_commission",
+  "sec_commission",
+  "commission_claim",
+  "commission_settled",
+  "commission_settled_on",
+  "cb_commission",
+  "commission_rate",
+  "commission_amount",
+  "commission_gst",
+  "commission_tds",
+  "commission_net",
+  "sec_commission_work",
+  "commission_working",
+  "tab_knowledge",
+  "sec_kb_lib",
+  "knowledge_library",
+  "sec_kb_shared",
+  "knowledge_shares",
   "amended_from"
  ],
  "fields": [
+  {
+   "fieldname": "tab_lead",
+   "fieldtype": "Tab Break",
+   "label": "Lead"
+  },
   {
    "fieldname": "sec_farmer",
    "fieldtype": "Section Break",
@@ -194,15 +282,23 @@
    "reqd": 1
   },
   {
-   "fieldname": "alt_mobile",
-   "fieldtype": "Data",
-   "label": "Alternate Mobile",
-   "options": "Phone"
+   "fieldname": "whatsapp_same_as_mobile",
+   "fieldtype": "Check",
+   "label": "WhatsApp same as mobile",
+   "default": "1"
   },
   {
    "fieldname": "whatsapp",
    "fieldtype": "Data",
    "label": "WhatsApp",
+   "options": "Phone",
+   "depends_on": "eval:!doc.whatsapp_same_as_mobile",
+   "mandatory_depends_on": "eval:!doc.whatsapp_same_as_mobile"
+  },
+  {
+   "fieldname": "alt_mobile",
+   "fieldtype": "Data",
+   "label": "Alternate Mobile",
    "options": "Phone"
   },
   {
@@ -276,14 +372,26 @@
    "fieldtype": "Column Break"
   },
   {
+   "fieldname": "address_auto",
+   "fieldtype": "Check",
+   "label": "Auto-compose address",
+   "default": "1",
+   "description": "Untick to type a landmark or plot detail by hand."
+  },
+  {
    "fieldname": "address",
    "fieldtype": "Small Text",
-   "label": "Address"
+   "label": "Address",
+   "read_only_depends_on": "eval:doc.address_auto"
   },
   {
    "fieldname": "place_mr",
    "fieldtype": "Data",
    "label": "Place (Marathi)"
+  },
+  {
+   "fieldname": "cb_place2",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "gps_lat",
@@ -329,7 +437,7 @@
    "fieldname": "source",
    "fieldtype": "Link",
    "label": "Source",
-   "options": "Lead Source"
+   "options": "Pond Lead Source"
   },
   {
    "fieldname": "cb_pipeline",
@@ -345,7 +453,8 @@
   {
    "fieldname": "enquiry_date",
    "fieldtype": "Date",
-   "label": "Enquiry Date"
+   "label": "Enquiry Date",
+   "default": "Today"
   },
   {
    "fieldname": "remarks",
@@ -353,538 +462,10 @@
    "label": "Remarks"
   },
   {
-   "fieldname": "sec_qual",
-   "fieldtype": "Section Break",
-   "label": "Qualification"
-  },
-  {
-   "fieldname": "qualification_items",
-   "fieldtype": "Table",
-   "label": "Checklist",
-   "options": "Pond Qualification Item"
-  },
-  {
-   "fieldname": "qualification_score",
-   "fieldtype": "Percent",
-   "label": "Qualification Score",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec_survey",
-   "fieldtype": "Section Break",
-   "label": "Site Survey"
-  },
-  {
-   "fieldname": "survey_date",
-   "fieldtype": "Date",
-   "label": "Survey Date"
-  },
-  {
-   "fieldname": "soil_type",
-   "fieldtype": "Link",
-   "label": "Soil Type",
-   "options": "Soil Type"
-  },
-  {
-   "fieldname": "water_source",
-   "fieldtype": "Link",
-   "label": "Water Source",
-   "options": "Water Source"
-  },
-  {
-   "fieldname": "cb_survey",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "anchor_width",
-   "fieldtype": "Float",
-   "label": "Anchor Trench Width (m)",
-   "precision": "3"
-  },
-  {
-   "fieldname": "extra_pct",
-   "fieldtype": "Float",
-   "label": "Extra Allowance (%)",
-   "precision": "2"
-  },
-  {
-   "fieldname": "round_to",
-   "fieldtype": "Float",
-   "label": "Round To (sq.m)",
-   "precision": "2"
-  },
-  {
-   "fieldname": "depth_override",
-   "fieldtype": "Float",
-   "label": "Depth Override (m)",
-   "precision": "3",
-   "description": "Leave 0 to use the average of the four wall heights"
-  },
-  {
-   "fieldname": "sec_walls",
-   "fieldtype": "Section Break",
-   "label": "Wall Measurements"
-  },
-  {
-   "fieldname": "walls",
-   "fieldtype": "Table",
-   "label": "Walls",
-   "options": "Pond Wall"
-  },
-  {
-   "fieldname": "pond_diagram",
-   "fieldtype": "HTML",
-   "label": "Pond Diagram",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec_calc",
-   "fieldtype": "Section Break",
-   "label": "Calculated Quantities"
-  },
-  {
-   "fieldname": "wall_area_total",
-   "fieldtype": "Float",
-   "label": "Total Wall Area (sq.m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "base_area",
-   "fieldtype": "Float",
-   "label": "Base Area (sq.m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "perimeter",
-   "fieldtype": "Float",
-   "label": "Top Perimeter (m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "anchor_area",
-   "fieldtype": "Float",
-   "label": "Anchor Area (sq.m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "cb_calc",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "subtotal_area",
-   "fieldtype": "Float",
-   "label": "Subtotal (sq.m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "area_with_extra",
-   "fieldtype": "Float",
-   "label": "With Extra (sq.m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "area_sqm",
-   "fieldtype": "Float",
-   "label": "Liner Area (sq.m)",
-   "precision": "2",
-   "read_only": 1,
-   "bold": 1
-  },
-  {
-   "fieldname": "liner_weight_kg",
-   "fieldtype": "Float",
-   "label": "Liner Weight (kg)",
-   "precision": "2",
-   "read_only": 1
-  },
-  {
-   "fieldname": "cb_calc2",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "mean_length",
-   "fieldtype": "Float",
-   "label": "Mean Length (m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "mean_width",
-   "fieldtype": "Float",
-   "label": "Mean Width (m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "mean_depth",
-   "fieldtype": "Float",
-   "label": "Depth Used (m)",
-   "precision": "3",
-   "read_only": 1
-  },
-  {
-   "fieldname": "volume_cum",
-   "fieldtype": "Float",
-   "label": "Water Volume (cu.m)",
-   "precision": "2",
-   "read_only": 1
-  },
-  {
-   "fieldname": "litres",
-   "fieldtype": "Float",
-   "label": "Litres",
-   "precision": "0",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec_money",
-   "fieldtype": "Section Break",
-   "label": "Pricing"
-  },
-  {
-   "fieldname": "rate_farmer",
-   "fieldtype": "Currency",
-   "label": "Rate to Farmer"
-  },
-  {
-   "fieldname": "rate_texel",
-   "fieldtype": "Currency",
-   "label": "Liner Supplier Rate"
-  },
-  {
-   "fieldname": "rate_risha",
-   "fieldtype": "Currency",
-   "label": "Installation Rate"
-  },
-  {
-   "fieldname": "cb_money",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "amount_total",
-   "fieldtype": "Currency",
-   "label": "Farmer Total",
-   "read_only": 1,
-   "bold": 1
-  },
-  {
-   "fieldname": "amount_texel",
-   "fieldtype": "Currency",
-   "label": "Liner Amount",
-   "read_only": 1
-  },
-  {
-   "fieldname": "amount_risha",
-   "fieldtype": "Currency",
-   "label": "Installation Amount",
-   "read_only": 1
-  },
-  {
-   "fieldname": "amount_margin",
-   "fieldtype": "Currency",
-   "label": "Margin",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec_quote",
-   "fieldtype": "Section Break",
-   "label": "Quotation"
-  },
-  {
-   "fieldname": "quotation_no",
-   "fieldtype": "Data",
-   "label": "Quotation No."
-  },
-  {
-   "fieldname": "quotation_date",
-   "fieldtype": "Date",
-   "label": "Quotation Date"
-  },
-  {
-   "fieldname": "quotation_valid_till",
-   "fieldtype": "Date",
-   "label": "Valid Till"
-  },
-  {
-   "fieldname": "cb_quote",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "erpnext_quotation",
-   "fieldtype": "Link",
-   "label": "ERPNext Quotation",
-   "options": "Quotation",
-   "read_only": 1
-  },
-  {
-   "fieldname": "quotation_notes",
-   "fieldtype": "Small Text",
-   "label": "Additional Notes"
-  },
-  {
-   "fieldname": "quotation_notes_mr",
-   "fieldtype": "Small Text",
-   "label": "Additional Notes (Marathi)"
-  },
-  {
-   "fieldname": "sec_order",
-   "fieldtype": "Section Break",
-   "label": "Order Booking"
-  },
-  {
-   "fieldname": "order_date",
-   "fieldtype": "Date",
-   "label": "Order Date"
-  },
-  {
-   "fieldname": "sales_order_no",
-   "fieldtype": "Data",
-   "label": "SO No."
-  },
-  {
-   "fieldname": "po_no",
-   "fieldtype": "Data",
-   "label": "Farmer PO / Reference"
-  },
-  {
-   "fieldname": "supplier_confirmation",
-   "fieldtype": "Data",
-   "label": "Supplier Confirmation No."
-  },
-  {
-   "fieldname": "cb_order",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "paid_texel",
-   "fieldtype": "Currency",
-   "label": "Liner Amount Paid"
-  },
-  {
-   "fieldname": "utr_texel",
-   "fieldtype": "Data",
-   "label": "Liner Payment UTR"
-  },
-  {
-   "fieldname": "paid_risha",
-   "fieldtype": "Currency",
-   "label": "Installation Amount Paid"
-  },
-  {
-   "fieldname": "utr_risha",
-   "fieldtype": "Data",
-   "label": "Installation Payment UTR"
-  },
-  {
-   "fieldname": "order_remark",
-   "fieldtype": "Small Text",
-   "label": "Order Remark"
-  },
-  {
-   "fieldname": "order_remark_mr",
-   "fieldtype": "Small Text",
-   "label": "Order Remark (Marathi)"
-  },
-  {
-   "fieldname": "sec_docs",
-   "fieldtype": "Section Break",
-   "label": "Documents"
-  },
-  {
-   "fieldname": "documents",
-   "fieldtype": "Table",
-   "label": "Documents",
-   "options": "Pond Document"
-  },
-  {
-   "fieldname": "documents_pending",
-   "fieldtype": "Int",
-   "label": "Documents Pending",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec_dispatch",
-   "fieldtype": "Section Break",
-   "label": "Dispatch and Delivery"
-  },
-  {
-   "fieldname": "dispatch_trip",
-   "fieldtype": "Link",
-   "label": "Dispatch Trip",
-   "options": "Dispatch Trip",
-   "read_only": 1
-  },
-  {
-   "fieldname": "godown",
-   "fieldtype": "Link",
-   "label": "Godown",
-   "options": "Godown"
-  },
-  {
-   "fieldname": "dispatch_date",
-   "fieldtype": "Date",
-   "label": "Dispatch Date"
-  },
-  {
-   "fieldname": "lr_no",
-   "fieldtype": "Data",
-   "label": "LR / Challan No."
-  },
-  {
-   "fieldname": "cb_dispatch",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "vehicle",
-   "fieldtype": "Link",
-   "label": "Vehicle",
-   "options": "Vehicle"
-  },
-  {
-   "fieldname": "driver",
-   "fieldtype": "Link",
-   "label": "Driver",
-   "options": "Driver"
-  },
-  {
-   "fieldname": "delivered_on",
-   "fieldtype": "Date",
-   "label": "Delivered On"
-  },
-  {
-   "fieldname": "challans",
-   "fieldtype": "Table",
-   "label": "Challans",
-   "options": "Pond Challan"
-  },
-  {
-   "fieldname": "sec_install",
-   "fieldtype": "Section Break",
-   "label": "Installation"
-  },
-  {
-   "fieldname": "installation_job",
-   "fieldtype": "Link",
-   "label": "Installation Job",
-   "options": "Installation Job",
-   "read_only": 1
-  },
-  {
-   "fieldname": "installation_team",
-   "fieldtype": "Link",
-   "label": "Installation Team",
-   "options": "Installation Team"
-  },
-  {
-   "fieldname": "cb_install",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "installation_start",
-   "fieldtype": "Date",
-   "label": "Start Date"
-  },
-  {
-   "fieldname": "installation_end",
-   "fieldtype": "Date",
-   "label": "End Date"
-  },
-  {
-   "fieldname": "installation_steps",
-   "fieldtype": "Table",
-   "label": "Steps",
-   "options": "Pond Installation Step"
-  },
-  {
-   "fieldname": "installation_progress",
-   "fieldtype": "Percent",
-   "label": "Progress",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec_photos",
-   "fieldtype": "Section Break",
-   "label": "Photographs"
-  },
-  {
-   "fieldname": "photos",
-   "fieldtype": "Table",
-   "label": "Photos",
-   "options": "Pond Photo"
-  },
-  {
-   "fieldname": "sec_after",
-   "fieldtype": "Section Break",
-   "label": "After Sales"
-  },
-  {
-   "fieldname": "feedback",
-   "fieldtype": "Link",
-   "label": "Customer Feedback",
-   "options": "Customer Feedback",
-   "read_only": 1
-  },
-  {
-   "fieldname": "feedback_score",
-   "fieldtype": "Float",
-   "label": "Feedback Score",
-   "precision": "2",
-   "read_only": 1
-  },
-  {
-   "fieldname": "cb_after",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "open_complaints",
-   "fieldtype": "Int",
-   "label": "Open Complaints",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sec_commission",
-   "fieldtype": "Section Break",
-   "label": "Commission"
-  },
-  {
-   "fieldname": "commission_claim",
-   "fieldtype": "Link",
-   "label": "Commission Claim",
-   "options": "Commission Claim",
-   "read_only": 1
-  },
-  {
-   "fieldname": "commission_settled",
-   "fieldtype": "Check",
-   "label": "Settled",
-   "read_only": 1
-  },
-  {
-   "fieldname": "cb_commission",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "commission_settled_on",
-   "fieldtype": "Date",
-   "label": "Settled On",
-   "read_only": 1
-  },
-  {
-   "fieldname": "commission_amount",
-   "fieldtype": "Currency",
-   "label": "Commission Amount",
-   "read_only": 1
-  },
-  {
    "fieldname": "sec_stamps",
    "fieldtype": "Section Break",
-   "label": "Stage Timestamps"
+   "label": "Stage Timestamps",
+   "collapsible": 1
   },
   {
    "fieldname": "ts_qualified",
@@ -937,6 +518,960 @@
    "fieldtype": "Date",
    "label": "Completed On",
    "read_only": 1
+  },
+  {
+   "fieldname": "tab_qualification",
+   "fieldtype": "Tab Break",
+   "label": "Lead Qualification"
+  },
+  {
+   "fieldname": "sec_qual_check",
+   "fieldtype": "Section Break",
+   "label": "Checklist"
+  },
+  {
+   "fieldname": "qualification_items",
+   "fieldtype": "Table",
+   "label": "Checklist",
+   "options": "Pond Qualification Item",
+   "description": "Fixed list — loaded from the Qualification Item master. Tick what the site actually satisfies."
+  },
+  {
+   "fieldname": "load_checklist",
+   "fieldtype": "Button",
+   "label": "Reload Checklist",
+   "description": "Pulls any newly added active Qualification Items."
+  },
+  {
+   "fieldname": "sec_qual_detail",
+   "fieldtype": "Section Break",
+   "label": "Requirement"
+  },
+  {
+   "fieldname": "expected_pond_size",
+   "fieldtype": "Float",
+   "label": "Expected Pond Size (sq.m)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "target_month",
+   "fieldtype": "Select",
+   "label": "Target Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "target_year",
+   "fieldtype": "Int",
+   "label": "Target Year"
+  },
+  {
+   "fieldname": "cb_qual",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qualification_notes",
+   "fieldtype": "Text",
+   "label": "Notes / Remarks"
+  },
+  {
+   "fieldname": "sec_qual_out",
+   "fieldtype": "Section Break",
+   "label": "Outcome"
+  },
+  {
+   "fieldname": "qualification_score",
+   "fieldtype": "Percent",
+   "label": "Checklist Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qualification_status",
+   "fieldtype": "Select",
+   "label": "Qualification Status",
+   "options": "Pending\nQualified\nNot Qualified",
+   "default": "Pending",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "cb_qual_out",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qualified_on",
+   "fieldtype": "Date",
+   "label": "Decided On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "not_qualified_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason Not Qualified",
+   "depends_on": "eval:doc.qualification_status=='Not Qualified'",
+   "mandatory_depends_on": "eval:doc.qualification_status=='Not Qualified'"
+  },
+  {
+   "fieldname": "tab_survey",
+   "fieldtype": "Tab Break",
+   "label": "Survey"
+  },
+  {
+   "fieldname": "sec_survey",
+   "fieldtype": "Section Break",
+   "label": "Site Survey"
+  },
+  {
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "label": "Survey Date"
+  },
+  {
+   "fieldname": "surveyed_by",
+   "fieldtype": "Data",
+   "label": "Surveyed By",
+   "description": "Engineer who took the measurements."
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Link",
+   "label": "Soil Type",
+   "options": "Soil Type"
+  },
+  {
+   "fieldname": "water_source",
+   "fieldtype": "Link",
+   "label": "Water Source",
+   "options": "Water Source"
+  },
+  {
+   "fieldname": "cb_survey",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "survey_gps",
+   "fieldtype": "Data",
+   "label": "Survey GPS"
+  },
+  {
+   "fieldname": "existing_excavation",
+   "fieldtype": "Check",
+   "label": "Pond Already Excavated"
+  },
+  {
+   "fieldname": "access_for_truck",
+   "fieldtype": "Check",
+   "label": "Truck Access Available"
+  },
+  {
+   "fieldname": "power_available",
+   "fieldtype": "Check",
+   "label": "Power for Welding Available"
+  },
+  {
+   "fieldname": "sec_survey_notes",
+   "fieldtype": "Section Break",
+   "label": "Observations"
+  },
+  {
+   "fieldname": "survey_notes",
+   "fieldtype": "Text",
+   "label": "Site Observations"
+  },
+  {
+   "fieldname": "sec_survey_photos",
+   "fieldtype": "Section Break",
+   "label": "Survey Photographs"
+  },
+  {
+   "fieldname": "photos",
+   "fieldtype": "Table",
+   "label": "Photos",
+   "options": "Pond Photo"
+  },
+  {
+   "fieldname": "tab_calculator",
+   "fieldtype": "Tab Break",
+   "label": "Pond Calculator and Report"
+  },
+  {
+   "fieldname": "sec_walls",
+   "fieldtype": "Section Break",
+   "label": "Pond Measurement",
+   "description": "Measurements in metres. Top → Height → Bottom."
+  },
+  {
+   "fieldname": "walls",
+   "fieldtype": "Table",
+   "label": "Wall Measurements",
+   "options": "Pond Wall"
+  },
+  {
+   "fieldname": "sec_params",
+   "fieldtype": "Section Break",
+   "label": "Parameters"
+  },
+  {
+   "fieldname": "anchor_width",
+   "fieldtype": "Float",
+   "label": "Anchor Width (m)",
+   "precision": "3",
+   "default": "1.5"
+  },
+  {
+   "fieldname": "cb_params",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "waste_pct",
+   "fieldtype": "Float",
+   "label": "Overlap / Waste %",
+   "precision": "2",
+   "default": "5"
+  },
+  {
+   "fieldname": "cb_params2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "water_depth",
+   "fieldtype": "Float",
+   "label": "Water Depth (m)",
+   "precision": "3",
+   "description": "Leave blank to use the average of the four heights. Enter the true vertical depth for a realistic capacity."
+  },
+  {
+   "fieldname": "cb_params3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "round_to",
+   "fieldtype": "Float",
+   "label": "Round Area To (sq.m)",
+   "precision": "2",
+   "default": "10"
+  },
+  {
+   "fieldname": "sec_diagram",
+   "fieldtype": "Section Break",
+   "label": "Pond Plan"
+  },
+  {
+   "fieldname": "pond_diagram",
+   "fieldtype": "HTML",
+   "label": "Pond Diagram",
+   "description": "Live plan and cross-section, redrawn as you type."
+  },
+  {
+   "fieldname": "sec_liner",
+   "fieldtype": "Section Break",
+   "label": "Liner Area"
+  },
+  {
+   "fieldname": "wall_area_total",
+   "fieldtype": "Float",
+   "label": "Total Wall Area (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_area",
+   "fieldtype": "Float",
+   "label": "Base Floor (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "perimeter",
+   "fieldtype": "Float",
+   "label": "Top Perimeter (m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "anchor_area",
+   "fieldtype": "Float",
+   "label": "Anchor Trench (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_liner",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_total_area",
+   "fieldtype": "Float",
+   "label": "Sub Total (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "waste_area",
+   "fieldtype": "Float",
+   "label": "Overlap and Wastage (sq.m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "area_sqm",
+   "fieldtype": "Float",
+   "label": "Liner Required (sq.m)",
+   "precision": "2",
+   "read_only": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "liner_weight_kg",
+   "fieldtype": "Float",
+   "label": "Liner Weight (kg)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_water",
+   "fieldtype": "Section Break",
+   "label": "Water Capacity"
+  },
+  {
+   "fieldname": "mean_length",
+   "fieldtype": "Float",
+   "label": "Mean Length (top+bottom)/2",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mean_breadth",
+   "fieldtype": "Float",
+   "label": "Mean Breadth (top+bottom)/2",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "height_used",
+   "fieldtype": "Float",
+   "label": "Height Used (m)",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_water",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "capacity_cum",
+   "fieldtype": "Float",
+   "label": "Capacity (cu.m)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "capacity_litres",
+   "fieldtype": "Float",
+   "label": "In Litres",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "capacity_lakh_litres",
+   "fieldtype": "Float",
+   "label": "In Lakh Litres",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_money",
+   "fieldtype": "Section Break",
+   "label": "Amounts"
+  },
+  {
+   "fieldname": "rate_texel",
+   "fieldtype": "Currency",
+   "label": "Liner Rate (₹/sq.m)"
+  },
+  {
+   "fieldname": "rate_risha",
+   "fieldtype": "Currency",
+   "label": "Installation Rate (₹/sq.m)"
+  },
+  {
+   "fieldname": "rate_farmer",
+   "fieldtype": "Currency",
+   "label": "Farmer Rate (₹/sq.m)"
+  },
+  {
+   "fieldname": "cb_money",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_texel",
+   "fieldtype": "Currency",
+   "label": "Liner Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_risha",
+   "fieldtype": "Currency",
+   "label": "Installation Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_total",
+   "fieldtype": "Currency",
+   "label": "Farmer Pays",
+   "read_only": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "amount_margin",
+   "fieldtype": "Currency",
+   "label": "Margin",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_in_words",
+   "fieldtype": "Small Text",
+   "label": "Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_report",
+   "fieldtype": "Section Break",
+   "label": "Calculation Report"
+  },
+  {
+   "fieldname": "calculation_report",
+   "fieldtype": "HTML",
+   "label": "Report"
+  },
+  {
+   "fieldname": "tab_quotation",
+   "fieldtype": "Tab Break",
+   "label": "Quotation"
+  },
+  {
+   "fieldname": "sec_quote",
+   "fieldtype": "Section Break",
+   "label": "Quotation"
+  },
+  {
+   "fieldname": "quotation_no",
+   "fieldtype": "Data",
+   "label": "Quotation No."
+  },
+  {
+   "fieldname": "quotation_date",
+   "fieldtype": "Date",
+   "label": "Quotation Date"
+  },
+  {
+   "fieldname": "quotation_valid_till",
+   "fieldtype": "Date",
+   "label": "Valid Till"
+  },
+  {
+   "fieldname": "cb_quote",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erpnext_quotation",
+   "fieldtype": "Link",
+   "label": "ERPNext Quotation",
+   "options": "Quotation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quotation_status",
+   "fieldtype": "Select",
+   "label": "Quotation Status",
+   "options": "Draft\nSent\nAccepted\nRejected",
+   "default": "Draft"
+  },
+  {
+   "fieldname": "sec_quote_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "quotation_notes",
+   "fieldtype": "Small Text",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "quotation_notes_mr",
+   "fieldtype": "Small Text",
+   "label": "Additional Notes (Marathi)"
+  },
+  {
+   "fieldname": "tab_sales_order",
+   "fieldtype": "Tab Break",
+   "label": "Sales Order"
+  },
+  {
+   "fieldname": "sec_order",
+   "fieldtype": "Section Break",
+   "label": "Order Booking"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "sales_order_no",
+   "fieldtype": "Data",
+   "label": "SO No."
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "Farmer PO / Reference"
+  },
+  {
+   "fieldname": "cb_order",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_value",
+   "fieldtype": "Currency",
+   "label": "Order Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "advance_received",
+   "fieldtype": "Currency",
+   "label": "Advance Received"
+  },
+  {
+   "fieldname": "balance_due",
+   "fieldtype": "Currency",
+   "label": "Balance Due",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_order_remark",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "order_remark",
+   "fieldtype": "Small Text",
+   "label": "Order Remark"
+  },
+  {
+   "fieldname": "order_remark_mr",
+   "fieldtype": "Small Text",
+   "label": "Order Remark (Marathi)"
+  },
+  {
+   "fieldname": "sec_docs",
+   "fieldtype": "Section Break",
+   "label": "Documents Collected"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Pond Document"
+  },
+  {
+   "fieldname": "documents_pending",
+   "fieldtype": "Int",
+   "label": "Documents Pending",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_purchase_order",
+   "fieldtype": "Tab Break",
+   "label": "Purchase Order"
+  },
+  {
+   "fieldname": "sec_po_liner",
+   "fieldtype": "Section Break",
+   "label": "Liner Supplier"
+  },
+  {
+   "fieldname": "liner_supplier",
+   "fieldtype": "Link",
+   "label": "Liner Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "po_texel_no",
+   "fieldtype": "Data",
+   "label": "PO No."
+  },
+  {
+   "fieldname": "po_texel_date",
+   "fieldtype": "Date",
+   "label": "PO Date"
+  },
+  {
+   "fieldname": "supplier_confirmation",
+   "fieldtype": "Data",
+   "label": "Supplier Confirmation No."
+  },
+  {
+   "fieldname": "cb_po_liner",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_texel_amount",
+   "fieldtype": "Currency",
+   "label": "PO Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "paid_texel",
+   "fieldtype": "Currency",
+   "label": "Amount Paid"
+  },
+  {
+   "fieldname": "utr_texel",
+   "fieldtype": "Data",
+   "label": "Payment UTR"
+  },
+  {
+   "fieldname": "paid_texel_on",
+   "fieldtype": "Date",
+   "label": "Paid On"
+  },
+  {
+   "fieldname": "sec_po_inst",
+   "fieldtype": "Section Break",
+   "label": "Installation Contractor"
+  },
+  {
+   "fieldname": "installation_supplier",
+   "fieldtype": "Link",
+   "label": "Installation Contractor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "po_risha_no",
+   "fieldtype": "Data",
+   "label": "PO No."
+  },
+  {
+   "fieldname": "po_risha_date",
+   "fieldtype": "Date",
+   "label": "PO Date"
+  },
+  {
+   "fieldname": "cb_po_inst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_risha_amount",
+   "fieldtype": "Currency",
+   "label": "PO Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "paid_risha",
+   "fieldtype": "Currency",
+   "label": "Amount Paid"
+  },
+  {
+   "fieldname": "utr_risha",
+   "fieldtype": "Data",
+   "label": "Payment UTR"
+  },
+  {
+   "fieldname": "paid_risha_on",
+   "fieldtype": "Date",
+   "label": "Paid On"
+  },
+  {
+   "fieldname": "tab_delivery",
+   "fieldtype": "Tab Break",
+   "label": "Delivery Programme"
+  },
+  {
+   "fieldname": "sec_dispatch",
+   "fieldtype": "Section Break",
+   "label": "Dispatch"
+  },
+  {
+   "fieldname": "dispatch_trip",
+   "fieldtype": "Link",
+   "label": "Dispatch Trip",
+   "options": "Dispatch Trip",
+   "read_only": 1
+  },
+  {
+   "fieldname": "godown",
+   "fieldtype": "Link",
+   "label": "Godown",
+   "options": "Godown"
+  },
+  {
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "label": "Dispatch Date"
+  },
+  {
+   "fieldname": "lr_no",
+   "fieldtype": "Data",
+   "label": "LR / Challan No."
+  },
+  {
+   "fieldname": "cb_dispatch",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "planned_delivery_date",
+   "fieldtype": "Date",
+   "label": "Planned Delivery Date"
+  },
+  {
+   "fieldname": "delivered_on",
+   "fieldtype": "Date",
+   "label": "Delivered On"
+  },
+  {
+   "fieldname": "sec_challans",
+   "fieldtype": "Section Break",
+   "label": "Challans"
+  },
+  {
+   "fieldname": "challans",
+   "fieldtype": "Table",
+   "label": "Challans",
+   "options": "Pond Challan"
+  },
+  {
+   "fieldname": "tab_installation",
+   "fieldtype": "Tab Break",
+   "label": "Installation"
+  },
+  {
+   "fieldname": "sec_install",
+   "fieldtype": "Section Break",
+   "label": "Installation"
+  },
+  {
+   "fieldname": "installation_job",
+   "fieldtype": "Link",
+   "label": "Installation Job",
+   "options": "Installation Job",
+   "read_only": 1
+  },
+  {
+   "fieldname": "installation_team",
+   "fieldtype": "Link",
+   "label": "Installation Team",
+   "options": "Installation Team"
+  },
+  {
+   "fieldname": "cb_install",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "installation_start",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "installation_end",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "installation_progress",
+   "fieldtype": "Percent",
+   "label": "Progress",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_install_steps",
+   "fieldtype": "Section Break",
+   "label": "Steps"
+  },
+  {
+   "fieldname": "installation_steps",
+   "fieldtype": "Table",
+   "label": "Steps",
+   "options": "Pond Installation Step"
+  },
+  {
+   "fieldname": "tab_feedback",
+   "fieldtype": "Tab Break",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "sec_after",
+   "fieldtype": "Section Break",
+   "label": "Customer Feedback"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Link",
+   "label": "Customer Feedback",
+   "options": "Customer Feedback",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_after",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedback_score",
+   "fieldtype": "Float",
+   "label": "Feedback Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "feedback_band",
+   "fieldtype": "Data",
+   "label": "Band",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_complaints",
+   "fieldtype": "Tab Break",
+   "label": "Complaints"
+  },
+  {
+   "fieldname": "sec_complaints",
+   "fieldtype": "Section Break",
+   "label": "Complaints"
+  },
+  {
+   "fieldname": "open_complaints",
+   "fieldtype": "Int",
+   "label": "Open Complaints",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_complaints",
+   "fieldtype": "Int",
+   "label": "Total Complaints",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_complaint_list",
+   "fieldtype": "Section Break",
+   "label": ""
+  },
+  {
+   "fieldname": "complaint_list",
+   "fieldtype": "HTML",
+   "label": "Complaint List"
+  },
+  {
+   "fieldname": "tab_commission",
+   "fieldtype": "Tab Break",
+   "label": "Commission Calculation"
+  },
+  {
+   "fieldname": "sec_commission",
+   "fieldtype": "Section Break",
+   "label": "Commission"
+  },
+  {
+   "fieldname": "commission_claim",
+   "fieldtype": "Link",
+   "label": "Commission Claim",
+   "options": "Commission Claim",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_settled",
+   "fieldtype": "Check",
+   "label": "Settled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_settled_on",
+   "fieldtype": "Date",
+   "label": "Settled On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_commission",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_rate",
+   "fieldtype": "Currency",
+   "label": "Commission Rate (₹/sq.m)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_amount",
+   "fieldtype": "Currency",
+   "label": "Commission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_gst",
+   "fieldtype": "Currency",
+   "label": "GST",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_tds",
+   "fieldtype": "Currency",
+   "label": "TDS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission_net",
+   "fieldtype": "Currency",
+   "label": "Net Receivable",
+   "read_only": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "sec_commission_work",
+   "fieldtype": "Section Break",
+   "label": "Working"
+  },
+  {
+   "fieldname": "commission_working",
+   "fieldtype": "HTML",
+   "label": "Working"
+  },
+  {
+   "fieldname": "tab_knowledge",
+   "fieldtype": "Tab Break",
+   "label": "Knowledge Bank"
+  },
+  {
+   "fieldname": "sec_kb_lib",
+   "fieldtype": "Section Break",
+   "label": "Library"
+  },
+  {
+   "fieldname": "knowledge_library",
+   "fieldtype": "HTML",
+   "label": "Available Material",
+   "description": "Brochures, videos, photos and decks from the Knowledge Asset master. Use Share to log what the farmer was sent."
+  },
+  {
+   "fieldname": "sec_kb_shared",
+   "fieldtype": "Section Break",
+   "label": "Shared With This Farmer"
+  },
+  {
+   "fieldname": "knowledge_shares",
+   "fieldtype": "Table",
+   "label": "Shared Material",
+   "options": "Pond Knowledge Share"
   },
   {
    "fieldname": "amended_from",

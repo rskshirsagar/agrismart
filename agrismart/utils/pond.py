@@ -88,6 +88,10 @@ def compute_pond(walls, anchor_w=None, extra_pct=None, depth_override=None,
 		"L": L, "B": B, "H": H,
 		"depth_used": "entered" if flt(depth_override) > 0 else "average of heights",
 		"vol": vol, "litres": vol * 1000.0,
+		"lakh_litres": vol * 1000.0 / 100000.0,
+		"waste_area": with_extra - sub,
+		"aN": wall_areas["north"], "aS": wall_areas["south"],
+		"aE": wall_areas["east"], "aW": wall_areas["west"],
 		"valid": (N["top"] + S["top"] + E["top"] + W["top"]
 		          + N["bot"] + S["bot"] + E["bot"] + W["bot"]) > 0,
 	}
@@ -140,3 +144,67 @@ def commission_row(qty, bill_rate=None, actual_rate=None, supply_rate=None,
 		"freight": flt(freight), "expenses": flt(expenses),
 		"net_receivable": gross - tds - flt(freight) - flt(expenses),
 	}
+
+
+# ── presentation helpers (Indian conventions) ─────────────────────────
+def indian_format(value, decimals=2):
+	"""1234567.5 -> '12,34,567.50' — last three digits, then pairs."""
+	neg = flt(value) < 0
+	s = f"{abs(flt(value)):.{decimals}f}"
+	whole, _, frac = s.partition(".")
+	if len(whole) > 3:
+		head, tail = whole[:-3], whole[-3:]
+		parts = []
+		while len(head) > 2:
+			parts.insert(0, head[-2:])
+			head = head[:-2]
+		if head:
+			parts.insert(0, head)
+		whole = ",".join(parts) + "," + tail
+	out = whole + ("." + frac if frac else "")
+	return ("-" + out) if neg else out
+
+
+ONES = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight",
+        "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen",
+        "Sixteen", "Seventeen", "Eighteen", "Nineteen"]
+TENS = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy",
+        "Eighty", "Ninety"]
+
+
+def _two(x):
+	return ONES[x] if x < 20 else TENS[x // 10] + (" " + ONES[x % 10] if x % 10 else "")
+
+
+def _three(x):
+	out = ""
+	if x > 99:
+		out += ONES[x // 100] + " Hundred" + (" " if x % 100 else "")
+	if x % 100:
+		out += _two(x % 100)
+	return out
+
+
+def in_words(num):
+	"""Crore / Lakh / Thousand wording, matching the prototype's words()."""
+	num = int(round(flt(num)))
+	if num == 0:
+		return "Zero Only"
+	out = ""
+	cr, num = divmod(num, 10000000)
+	lk, num = divmod(num, 100000)
+	th, num = divmod(num, 1000)
+	if cr:
+		out += _three(cr) + " Crore "
+	if lk:
+		out += _three(lk) + " Lakh "
+	if th:
+		out += _three(th) + " Thousand "
+	if num:
+		out += _three(num)
+	return out.strip() + " Only"
+
+
+def jinja_inr(value, decimals=2):
+	"""`inr` in print formats — Indian digit grouping without the symbol."""
+	return indian_format(value, decimals)

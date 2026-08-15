@@ -21,6 +21,15 @@
   "cb_detail",
   "attended_by",
   "cost_borne_by",
+  "sec_ba",
+  "photo_before",
+  "photo_before_2",
+  "before_notes",
+  "cb_ba",
+  "photo_after",
+  "photo_after_2",
+  "after_notes",
+  "sec_more_photos",
   "photos"
  ],
  "fields": [
@@ -113,6 +122,53 @@
    "fieldtype": "Select",
    "label": "Cost Borne By",
    "options": "\nAgriSmart\nLiner Supplier\nInstaller\nFarmer"
+  },
+  {
+   "fieldname": "sec_ba",
+   "fieldtype": "Section Break",
+   "label": "Before and After"
+  },
+  {
+   "fieldname": "photo_before",
+   "fieldtype": "Attach Image",
+   "label": "Photo — Before",
+   "description": "Condition as found, before any repair."
+  },
+  {
+   "fieldname": "photo_before_2",
+   "fieldtype": "Attach Image",
+   "label": "Photo — Before (2)"
+  },
+  {
+   "fieldname": "before_notes",
+   "fieldtype": "Small Text",
+   "label": "Before — Notes"
+  },
+  {
+   "fieldname": "cb_ba",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photo_after",
+   "fieldtype": "Attach Image",
+   "label": "Photo — After",
+   "description": "Condition after the remedy was carried out."
+  },
+  {
+   "fieldname": "photo_after_2",
+   "fieldtype": "Attach Image",
+   "label": "Photo — After (2)"
+  },
+  {
+   "fieldname": "after_notes",
+   "fieldtype": "Small Text",
+   "label": "After — Notes"
+  },
+  {
+   "fieldname": "sec_more_photos",
+   "fieldtype": "Section Break",
+   "label": "Additional Photographs",
+   "collapsible": 1
   },
   {
    "fieldname": "photos",

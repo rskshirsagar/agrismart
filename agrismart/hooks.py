@@ -25,6 +25,14 @@ add_to_apps_screen = [
 	}
 ]
 
+# ---------------------------------------------------------------- jinja
+jinja = {
+	"methods": [
+		"inr:agrismart.utils.pond.jinja_inr",
+		"in_words:agrismart.utils.pond.in_words",
+	],
+}
+
 # ---------------------------------------------------------------- fixtures
 fixtures = [
 	{"dt": "Workflow", "filters": [["name", "in", ["Pond Project Stage"]]]},
@@ -44,6 +52,7 @@ fixtures = [
 	]]]},
 	{"dt": "Custom Field", "filters": [["module", "=", "AgriSmart"]]},
 	{"dt": "Property Setter", "filters": [["module", "=", "AgriSmart"]]},
+	{"dt": "Print Format", "filters": [["module", "=", "AgriSmart"]]},
 ]
 
 # ---------------------------------------------------------------- hooks

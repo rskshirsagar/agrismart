@@ -44,8 +44,24 @@ COMPLAINT_NATURES = [
 ]
 
 SOILS = ["Murum", "Black cotton", "Red soil", "Sandy", "Rocky", "Mixed"]
+LEAD_SOURCES = [
+	"Walk-in", "Referral", "Existing Customer", "Exhibition", "Field Visit",
+	"WhatsApp", "Phone Enquiry", "Facebook", "Instagram", "Google",
+	"Dealer", "Agriculture Officer", "Other",
+]
+
 WATER = ["Borewell", "Open well", "Canal", "River lift",
          "Rainwater harvest", "Tanker"]
+
+
+KNOWLEDGE_SEED = [
+	("Product Brochure — Texel CLF-50", "Brochure"),
+	("IS 15351:2015 Test Certificate", "Test Certificate"),
+	("Installation Method Statement", "Presentation"),
+	("Anchor Trench Detail Drawing", "Drawing"),
+	("Completed Pond — Photo Set", "Photo"),
+	("Installation Walkthrough Video", "Video"),
+]
 
 
 def after_install():
@@ -57,7 +73,25 @@ def after_install():
 	seed("Complaint Nature", "complaint_nature", COMPLAINT_NATURES)
 	seed("Soil Type", "soil_type", SOILS)
 	seed("Water Source", "water_source", WATER)
+	seed("Pond Lead Source", "source_name", LEAD_SOURCES)
+	seed_knowledge_assets()
 	frappe.db.commit()
+
+
+def seed_knowledge_assets():
+	"""Placeholder rows so the Knowledge Bank tab is not empty on day one.
+
+	Files are attached later by the business — these carry the titles only.
+	"""
+	for title, kind in KNOWLEDGE_SEED:
+		if frappe.db.exists("Knowledge Asset", {"title": title}):
+			continue
+		frappe.get_doc({
+			"doctype": "Knowledge Asset",
+			"title": title,
+			"asset_type": kind,
+			"is_active": 1,
+		}).insert(ignore_permissions=True)
 
 
 def create_roles():

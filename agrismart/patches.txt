@@ -1,1 +1,5 @@
+[pre_model_sync]
+agrismart.patches.rename_calculator_fields
+
+[post_model_sync]
 agrismart.patches.create_dashboard_widgets

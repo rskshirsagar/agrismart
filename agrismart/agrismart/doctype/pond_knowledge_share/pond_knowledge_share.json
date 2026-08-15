@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-15 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "knowledge_asset",
+  "asset_type",
+  "shared_on",
+  "shared_via",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "knowledge_asset",
+   "fieldtype": "Link",
+   "label": "Asset",
+   "options": "Knowledge Asset",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "asset_type",
+   "fieldtype": "Data",
+   "label": "Type",
+   "fetch_from": "knowledge_asset.asset_type",
+   "read_only": 1,
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "shared_on",
+   "fieldtype": "Date",
+   "label": "Shared On",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "shared_via",
+   "fieldtype": "Select",
+   "label": "Shared Via",
+   "options": "\nWhatsApp\nEmail\nIn Person\nPrinted",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks",
+   "in_list_view": 1,
+   "columns": 3
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "Pond Knowledge Share",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "istable": 1
+}

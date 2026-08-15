@@ -175,9 +175,10 @@
   {
    "fieldname": "extra_pct",
    "fieldtype": "Float",
-   "label": "Extra Allowance (%)",
+   "label": "Overlap / Waste %",
    "default": "5",
-   "precision": "2"
+   "precision": "2",
+   "description": "Stored as extra_pct; shown as \"Waste %\" on the project."
   },
   {
    "fieldname": "cb_calc2",
