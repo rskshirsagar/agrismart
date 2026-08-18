@@ -7,10 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "wall",
-  "top_length",
+  "top",
   "height",
-  "bottom_length",
-  "wall_area"
+  "bottom",
+  "area"
  ],
  "fields": [
   {
@@ -23,7 +23,7 @@
    "columns": 2
   },
   {
-   "fieldname": "top_length",
+   "fieldname": "top",
    "fieldtype": "Float",
    "label": "Top (m)",
    "precision": "3",
@@ -33,13 +33,13 @@
   {
    "fieldname": "height",
    "fieldtype": "Float",
-   "label": "Height / Slope (m)",
+   "label": "Height (m)",
    "precision": "3",
    "in_list_view": 1,
    "columns": 2
   },
   {
-   "fieldname": "bottom_length",
+   "fieldname": "bottom",
    "fieldtype": "Float",
    "label": "Bottom (m)",
    "precision": "3",
@@ -47,13 +47,13 @@
    "columns": 2
   },
   {
-   "fieldname": "wall_area",
+   "fieldname": "area",
    "fieldtype": "Float",
-   "label": "Wall Area (sq.m)",
+   "label": "Area (sq.m)",
    "precision": "3",
    "read_only": 1,
    "in_list_view": 1,
-   "columns": 2
+   "columns": 3
   }
  ],
  "index_web_pages_for_search": 1,

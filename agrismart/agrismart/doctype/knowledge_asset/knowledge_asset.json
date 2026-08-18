@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-15 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "title_mr",
+  "asset_type",
+  "language",
+  "is_active",
+  "cb1",
+  "file",
+  "external_url",
+  "thumbnail",
+  "sec_desc",
+  "description",
+  "tags"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title_mr",
+   "fieldtype": "Data",
+   "label": "Title (Marathi)"
+  },
+  {
+   "fieldname": "asset_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Brochure\nVideo\nPhoto\nPresentation\nDrawing\nTest Certificate\nOther",
+   "reqd": 1,
+   "default": "Brochure",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Language",
+   "options": "English\nMarathi\nHindi\nBilingual",
+   "default": "Bilingual"
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": "1"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "File",
+   "description": "Upload the brochure, deck or photo. Leave blank for a link-only asset."
+  },
+  {
+   "fieldname": "external_url",
+   "fieldtype": "Data",
+   "label": "External URL",
+   "options": "URL",
+   "description": "YouTube or Drive link, for videos too large to upload."
+  },
+  {
+   "fieldname": "thumbnail",
+   "fieldtype": "Attach Image",
+   "label": "Thumbnail"
+  },
+  {
+   "fieldname": "sec_desc",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags",
+   "description": "Comma separated, e.g. CLF-50, warranty"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AgriSmart",
+ "name": "Knowledge Asset",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriSmart Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AgriSmart Executive",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "autoname": "format:KB-.#####.",
+ "naming_rule": "Expression",
+ "title_field": "title",
+ "search_fields": "asset_type,tags"
+}
